@@ -17,7 +17,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-light text-dark" id="body">
     <div class="container">
       <h2>Formulario de Registro</h2>
       <form id="registrationForm">
@@ -72,14 +72,18 @@
 
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
+      <div class="mt-3">
+        <button id="styleNormal" class="btn btn-secondary">Estilo Claro</button>
+        <button id="styleHighContrast" class="btn btn-dark">
+          Estilo Alto Contraste
+        </button>
+      </div>
     </div>
 
-    <!-- Enlace a Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Enlace al archivo JavaScript externo -->
     <script src="form-validation.js"></script>
   </body>
 </html>
